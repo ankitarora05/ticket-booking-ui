@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online seat reservation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="seat.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 text-center">
+          <h1>Cleartax Seat Booking</h1>
+          <div class="row text-center form-items">
+            <input
+              type="text"
+              class="form-control input"
+              id="Name"
+              placeholder="Enter Name"
+            />
+            <input
+              type="number"
+              min="0"
+              max="50"
+              class="form-control input"
+              id="Seats"
+              placeholder="Enter number of seats"
+            />
+            <button
+              type="button"
+              id="Selectseat"
+              class="btn btn-success seatsBtn"
+            >
+              Select Seats
+            </button>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+            <div
+              class="col-xs-12 col-sm-10 col-md-10 col-lg-10 bg-primary screen"
+            >
+              SCREEN
+            </div>
+            <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+          </div>
+          <div class="row">
+            <div class="seat-map">
+              <div class="seat-index">
+                <span class="spanBox" style="Background-color:green"></span
+                ><label>Selected Seats</label>
+              </div>
+              <div class="seat-index">
+                <span class="spanBox" style="Background-color:red"></span
+                ><label>Reserved Seats</label>
+              </div>
+              <div class="seat-index">
+                <span class="spanBox"></span><label>Empty Seats</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+              <table id="seatTable" class="table fixed-column td">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>D</td>
+                  </tr>
+                  <tr>
+                    <td>E</td>
+                  </tr>
+                  <tr>
+                    <td>F</td>
+                  </tr>
+                  <tr>
+                    <td>G</td>
+                  </tr>
+                  <tr>
+                    <td>H</td>
+                  </tr>
+                  <tr>
+                    <td>I</td>
+                  </tr>
+                  <tr>
+                    <td>J</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button
+                type="button"
+                id="ConfirmSeat"
+                class="btn btn-warning seatsBtn"
+              >
+                Confirm Seats
+              </button>
+            </div>
+            <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+          <table class="table-striped table table-bordered resultTable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>No. of Seats</th>
+                <th>Seats Reserved</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="jquery.min.js" defer></script>
+    <script type="text/javascript" src="seat.js" defer></script>
+    <script type="text/javascript" src="bootstrap.min.js" defer></script>
+  </body>
+</html>
